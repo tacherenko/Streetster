@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STREETSTER</title>
+    <link rel="shortcut icon" href="/Streetster/img/favicon.png" />
+    <link rel="stylesheet" href="css/product.css" />
+    <script
+      src="https://kit.fontawesome.com/c1108b7ccd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="nav">
+        <div class="container">
+          <div class="nav-body">
+            <a
+              href="index.html"
+              class="nav-logo"
+              aria-label="Перейти на главную страницу"
+            >
+              <img
+                src="/Streetster/img/product/logo-black.png"
+                alt="Streetster"
+                aria-label="logo"
+              />
+            </a>
+            <div class="nav-form-wrapper">
+              <form action="/" class="nav-form">
+                <button class="nav-submit">
+                  <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="search" class="nav-search" />
+              </form>
+            </div>
+            <div class="nav-icons">
+              <div class="nav-cart">
+                <button class="nav-cart-btn" aria-label="Открыть корзину">
+                  <a href="wallet.html"
+                    ><img src="/Streetster/img/product/cart.png" alt="корзина"
+                  /></a>
+                </button>
+              </div>
+              <div class="nav-burger">
+                <a href="#popup" class="header-burger"
+                  ><img src="/Streetster/img/product/menu.png" alt="меню"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="cart"></div>
+          <div class="header-menu-window" id="popup">
+            <div class="header-flex-content">
+              <span>RU / EN</span>
+              <a href="wallet.html"
+                ><img src="/Streetster/img/product/cart.png" alt="корзина"
+              /></a>
+              <a href="#"
+                ><img src="/Streetster/img/header/menu.png" alt="close"
+              /></a>
+            </div>
+            <div class="header-menu-content">
+              <ul class="header-list-bikes">
+                <a href="category.html"
+                  ><li class="header-menu-bikes" data-click="">
+                    ROAD SERIES
+                  </li></a
+                >
+                <a href="category.html"
+                  ><li class="header-menu-bikes" data-click="">
+                    STREET SERIES
+                  </li></a
+                >
+                <a href="category.html"
+                  ><li class="header-menu-bikes" data-click="">
+                    MOUNTAIN SERIES
+                  </li></a
+                >
+              </ul>
+              <ul class="header-list-navigation">
+                <a href="blog.html"
+                  ><li class="header-menu-navigation" data-click="">
+                    Новости
+                  </li></a
+                >
+                <a href="index.html#about"
+                  ><li class="header-menu-navigation" data-click="">
+                    О нас
+                  </li></a
+                >
+                <a href="index.html"
+                  ><li class="header-menu-navigation" data-click="">
+                    Контакты
+                  </li></a
+                >
+              </ul>
+              <div class="social-link-header">
+                <a href="" class="inst"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="" class="fb"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="promo">
+            <div class="promo-container">
+              <div class="promo-left">
+                <div class="product-wrapper">
+                  <div class="img-center">
+                    <img
+                      src="/Streetster/img/category/bike-category.png"
+                      alt="bike"
+                      class="product-img"
+                    />
+                  </div>
+                  <div class="wrapper-dots">
+                    <button class="wrapper-dot"></button>
+                    <button class="wrapper-dot"></button>
+                    <button class="wrapper-dot"></button>
+                    <button class="wrapper-dot"></button>
+                    <button class="wrapper-dot"></button>
+                  </div>
+                  <button class="swiper-control next-btn-product">
+                    <img src="/Streetster/img/news/next.svg" alt="next" />
+                  </button>
+                  <button class="swiper-control prev-btn-product">
+                    <img src="/Streetster/img/news/prev.svg" alt="prev" />
+                  </button>
+                </div>
+              </div>
+              <div class="promo-right">
+                <h2 class="product-name sub-title">STREETSTER NATHAN</h2>
+                <span class="product-price">12000 ₴</span>
+                <form action="/" class="product-form">
+                  <div class="product-color-wrap" role="radiogroup">
+                    <span class="product-colors"
+                      >Цвет: <span class="color">черный</span>
+                    </span>
+                    <label class="product-radio-color">
+                      <input
+                        type="radio"
+                        class="product-radio-input"
+                        name="colors"
+                        value="черный"
+                        checked=""
+                      />
+                      <span
+                        class="product-radio-span product-radio-span-black"
+                        tabindex="0"
+                      ></span>
+                    </label>
+                    <label class="product-radio-color">
+                      <input
+                        type="radio"
+                        class="product-radio-input"
+                        name="colors"
+                        value="голубой"
+                      />
+                      <span
+                        class="product-radio-span product-radio-span-blue"
+                        tabindex="0"
+                      ></span>
+                    </label>
+                    <label class="product-radio-color">
+                      <input
+                        type="radio"
+                        class="product-radio-input"
+                        name="colors"
+                        value="красный"
+                      />
+                      <span
+                        class="product-radio-span product-radio-span-red"
+                        tabindex="0"
+                      ></span>
+                    </label>
+                  </div>
+                  <div class="product-frame-wrap" role="radiogroup">
+                    <span class="product-frame"
+                      >Рама: <span class="frame">54” (Рост 175-185 см)</span>
+                    </span>
+                    <label class="product-radio-frame">
+                      <input
+                        type="radio"
+                        class="product-radio-frame-input"
+                        name="frame"
+                        value="54” (Рост 175-185 см)"
+                        checked=""
+                      />
+                      <span class="product-radio-frame-span" tabindex="0"
+                        >54”
+                      </span>
+                    </label>
+                    <label class="product-radio-frameframe">
+                      <input
+                        type="radio"
+                        class="product-radio-frame-input"
+                        name="frame"
+                        value="57” (Рост 185-200 см)"
+                      />
+                      <span class="product-radio-frame-span" tabindex="0"
+                        >57”
+                      </span>
+                    </label>
+                  </div>
+                </form>
+                <div class="product-accessories accessories">
+                  <h3 class="accessories-title sub-title">Доп. аксессуары</h3>
+                  <div class="accessories-products">
+                    <div class="product-item accessories-item" data-id="20">
+                      <img
+                        src="/Streetster/img/product/helmet.png"
+                        alt="Вело-шлем"
+                        class="product-image-first accessories-image"
+                      />
+                      <h4 class="product-name accessories-name">Шлем Octane</h4>
+                      <span class="product-price accessories-price">500 ₴</span>
+                      <button
+                        class="product-btn btn-link-black accessories-btn"
+                      >
+                        -
+                      </button>
+                    </div>
+                    <div class="product-item accessories-item" data-id="22">
+                      <img
+                        src="/Streetster/img/product/canyon.png"
+                        alt="Вело-шлем"
+                        class="product-image-first accessories-image"
+                      />
+                      <h4 class="product-name accessories-name">
+                        Защита Canyon
+                      </h4>
+                      <span class="product-price accessories-price">500 ₴</span>
+                      <button
+                        class="product-btn btn-link-black accessories-btn"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-all">
+                  <div class="product-all-price">
+                    <h3 class="sub-title product-title">Итого:</h3>
+                    <span class="price-text">12500 ₴ </span>
+                  </div>
+                  <button class="product-btn btn-link-transparent">
+                    <a href="wallet.html">Заказать</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="info">
+      <div class="info-container container">
+        <div class="info-block">
+          <h3 class="info-title sub-title">Описание</h3>
+          <p class="info-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p class="info-text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="info-reviews reviews">
+          <h3 class="reviews-title sub-title">Отзывы</h3>
+          <div class="reviews-body">
+            <div class="reviews-row">
+              <form action="#" class="reviews-form">
+                <div class="reviews-info">
+                  <span class="reviews-name">Андрей К.</span>
+                  <div
+                    class="reviews-rating rating rating-set"
+                    data-ajax="true"
+                  >
+                    <div class="rating-body">
+                      <div class="rating-active"></div>
+                      <div class="rating-items">
+                        <input
+                          type="radio"
+                          class="rating-item"
+                          value="1"
+                          name="rating"
+                        />
+                        <input
+                          type="radio"
+                          class="rating-item"
+                          value="2"
+                          name="rating"
+                        />
+                        <input
+                          type="radio"
+                          class="rating-item"
+                          value="3"
+                          name="rating"
+                        />
+                        <input
+                          type="radio"
+                          class="rating-item"
+                          value="4"
+                          name="rating"
+                        />
+                        <input
+                          type="radio"
+                          class="rating-item"
+                          value="5"
+                          name="rating"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <p class="reviews-text text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="reviews-row">
+              <form action="#" class="reviews-form">
+                <div class="reviews-info">
+                  <span class="reviews-name">Дмитрий Ж.</span>
+                  <div
+                    class="reviews-rating rating rating-set"
+                    data-ajax="true"
+                  >
+                    <div class="rating-body">
+                      <div class="rating-active"></div>
+                      <div class="rating-items">
+                        <input
+                          type="radio"
+                          class="rating-item"
+                          value="1"
+                          name="rating"
+                        />
+                        <input
+                          type="radio"
+                          class="rating-item"
+                          value="2"
+                          name="rating"
+                        />
+                        <input
+                          type="radio"
+                          class="rating-item"
+                          value="3"
+                          name="rating"
+                        />
+                        <input
+                          type="radio"
+                          class="rating-item"
+                          value="4"
+                          name="rating"
+                        />
+                        <input
+                          type="radio"
+                          class="rating-item"
+                          value="5"
+                          name="rating"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="reviews-text text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="models">
+      <div class="models-container container">
+        <h3 class="models-title sub-title">Другие модели Road Series</h3>
+        <div class="models-row">
+          <div class="models-block">
+            <div class="models-wrapper">
+              <img
+                src="/Streetster/img/category/bike-category.png"
+                alt="Велосипед"
+                class="models-image"
+              />
+              <div class="models-info">
+                <h3 class="models-subtitle sub-title">NATHAN</h3>
+                <div class="models-color-wrap">
+                  <label class="models-radio-color">
+                    <input
+                      type="radio"
+                      class="models-radio-input"
+                      name="colors"
+                      disabled=""
+                    />
+                    <span
+                      class="models-radio-span models-radio-span-black"
+                    ></span>
+                  </label>
+                  <label class="models-radio-color">
+                    <input
+                      type="radio"
+                      class="models-radio-input"
+                      name="colors"
+                      disabled=""
+                    />
+                    <span
+                      class="models-radio-span models-radio-span-blue"
+                    ></span>
+                  </label>
+                  <label class="models-radio-color">
+                    <input
+                      type="radio"
+                      class="models-radio-input"
+                      name="colors"
+                      disabled=""
+                    />
+                    <span
+                      class="models-radio-span models-radio-span-red"
+                    ></span>
+                  </label>
+                </div>
+              </div>
+              <span class="models-price">12000₴</span>
+              <a href="#" class="models-link" aria-label="Перейти к товару">
+              </a>
+            </div>
+          </div>
+          <div class="models-block">
+            <div class="models-wrapper">
+              <img
+                src="/Streetster/img/category/bike-category2.png"
+                alt="Велосипед"
+                class="models-image"
+              />
+              <div class="models-info">
+                <h3 class="models-subtitle sub-title">BROADWAY</h3>
+                <div class="models-color-wrap">
+                  <label class="models-radio-color">
+                    <input
+                      type="radio"
+                      class="models-radio-input"
+                      name="colors"
+                      disabled=""
+                    />
+                    <span
+                      class="models-radio-span models-radio-span-blue"
+                    ></span>
+                  </label>
+                  <label class="models-radio-color">
+                    <input
+                      type="radio"
+                      class="models-radio-input"
+                      name="colors"
+                      disabled=""
+                    />
+                    <span
+                      class="models-radio-span models-radio-span-white"
+                    ></span>
+                  </label>
+                </div>
+              </div>
+              <span class="models-price">12000₴</span>
+              <a href="#" class="models-link" aria-label="Перейти к товару">
+              </a>
+            </div>
+          </div>
+          <div class="models-block">
+            <div class="models-wrapper">
+              <img
+                src="/Streetster/img/category/bike-category3.png"
+                alt="Велосипед"
+                class="models-image"
+              />
+              <div class="models-info">
+                <h3 class="models-subtitle sub-title">BAKERSTREET</h3>
+                <div class="models-color-wrap">
+                  <label class="models-radio-color">
+                    <input
+                      type="radio"
+                      class="models-radio-input"
+                      name="colors"
+                      disabled=""
+                    />
+                    <span
+                      class="models-radio-span models-radio-span-yellow"
+                    ></span>
+                  </label>
+                  <label class="models-radio-color">
+                    <input
+                      type="radio"
+                      class="models-radio-input"
+                      name="colors"
+                      disabled=""
+                    />
+                    <span
+                      class="models-radio-span models-radio-span-red"
+                    ></span>
+                  </label>
+                </div>
+              </div>
+              <span class="models-price">12000₴</span>
+              <a href="#" class="models-link" aria-label="Перейти к товару">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-content-wrp">
+          <a href="index.html" class="footer-logo"
+            ><img
+              class="footer-logo-img"
+              src="/Streetster/img/footer/logo.png"
+              alt="logo"
+          /></a>
+          <div class="footer-text-wrp">
+            <div class="footer-content">
+              <p class="footer-subtitle">Категории</p>
+              <ul>
+                <li>
+                  <a class="footer-text" href="category.html"> ROAD SERIES</a>
+                </li>
+                <li>
+                  <a class="footer-text" href="category.html">STREET SERIES</a>
+                </li>
+                <li>
+                  <a class="footer-text" href="category.html">
+                    MOUNTAIN SERIES</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-content">
+              <p class="footer-subtitle">Информация</p>
+              <ul>
+                <li>
+                  <a class="footer-text" href="#about">О нас</a>
+                </li>
+                <li>
+                  <a class="footer-text" href="index.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-content">
+              <p class="footer-subtitle">Категории</p>
+              <ul>
+                <li>
+                  <a class="footer-text" href="category.html">ROAD SERIES</a>
+                </li>
+                <li>
+                  <a class="footer-text" href="category.html">STREET SERIES</a>
+                </li>
+                <li>
+                  <a class="footer-text" href="category.html"
+                    >MOUNTAIN SERIES</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-content">
+              <p class="footer-subtitle">Информация</p>
+              <ul>
+                <li>
+                  <a class="footer-text" href="#about">О нас</a>
+                </li>
+                <li>
+                  <a class="footer-text" href="index.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="social-link">
+            <a href="" class="inst"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <p class="footer-copyright">© STREETSTER — Все права защищены</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,549 @@
+@font-face {
+  font-family: "Futura PT Book";
+  src: url("../fonts/FuturaPT-Book.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Futura PT Bold";
+  src: url("../fonts/FuturaPT-Bold.ttf");
+  font-weight: 700;
+}
+
+/*------Обнуление------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-size: 14px;
+  font-family: "Futura PT Book";
+}
+
+/*------Навигация------*/
+
+#header {
+  position: relative;
+  width: 100%;
+}
+.nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  padding-top: 48px;
+  transition: 0.2s;
+  background: #fff;
+  margin-bottom: 70px;
+}
+.container {
+  max-width: 1300px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+.nav-body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  transition: 0.2s;
+}
+.nav-logo img {
+  cursor: pointer;
+  width: 161px;
+  height: 65px;
+}
+.nav-form-wrapper {
+  position: relative;
+}
+.nav-form {
+  position: relative;
+  z-index: 4;
+  padding-right: 75px;
+}
+.nav-submit {
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  width: 14px;
+  height: 14px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.nav-submit i {
+  width: 14px;
+  height: 14px;
+}
+.nav-search {
+  width: 400px;
+  height: 30px;
+  padding-left: 42px;
+  padding-right: 10px;
+  outline: 0;
+  background: rgba(242, 242, 242, 1);
+  border-radius: 15.5px;
+  border: 1px solid transparent;
+  font-size: 18px;
+  font-weight: 500;
+  transition: border 0.2s;
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+.nav-cart-btn {
+  position: relative;
+  z-index: 7;
+  display: flex;
+  align-self: center;
+  margin-right: 35px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.nav-burger {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 26px;
+  height: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+/*------Меню боковое------*/
+.header-menu-window {
+  width: 346px;
+  min-height: 550px;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 74px 10px 20px 62px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  transition: all 0.8s ease 0s;
+  transform: translate(0px, -100%);
+}
+.header-menu-window:target {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0);
+}
+.header-cart {
+  cursor: pointer;
+}
+.header-flex-content {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 48px;
+}
+.header-flex-content span {
+  font-family: "Futura PT Book", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+}
+.header-menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.header-list-bikes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+}
+.header-menu-bikes {
+  font-family: "Futura PT Bold", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+.header-menu-bikes:hover {
+  border-bottom: 1px solid #000;
+  display: inline;
+}
+.header-list-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+}
+.header-menu-navigation {
+  font-family: "Futura PT Book", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+.header-menu-navigation:hover {
+  border-bottom: 1px solid #000;
+  display: inline;
+}
+.social-link-header {
+  display: flex;
+  gap: 10px;
+  font-family: "Futura PT Book", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/*------Новости------*/
+.blog-title {
+  font-family: "Futura PT Bold", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 60px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 103px;
+}
+.main-news {
+  display: flex;
+  flex-direction: row;
+  max-width: 1300px;
+  width: 100%;
+  margin-bottom: 33px;
+}
+.news-img {
+  width: 702px;
+}
+.news-info {
+  padding: 28px 34px 0 34px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.subtitle {
+  font-family: "Futura PT Bold", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+}
+.data-info {
+  font-family: "Futura PT Book", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 41px;
+}
+.info-text {
+  font-family: "Futura PT Book", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+}
+.news-btn {
+  padding: 20px 0;
+  color: #fff;
+  margin-bottom: 14px;
+  text-align: center;
+  font-family: "Futura PT Bold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.news-btn a {
+  color: #fff;
+}
+.news-btn:hover {
+  border: 1px solid white;
+}
+
+/*------строка новостей------*/
+.other-news {
+  margin-bottom: 399px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.news-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 413px;
+  width: 100%;
+}
+.news-info-item {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 23px 0 28px;
+}
+.data-info-item {
+  margin-bottom: 28px;
+}
+.text {
+  margin-bottom: 61px;
+}
+
+/*------Подвал------*/
+
+.footer {
+  min-height: 357px;
+  background-color: #000;
+}
+.footer-container {
+  padding: 76px 15px 0px 15px;
+}
+.footer-content-wrp {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 70px 20px 0px;
+}
+.footer-logo {
+  width: 180px;
+  height: 65px;
+}
+.footer-text-wrp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+footer * {
+  color: #fff;
+}
+.footer-subtitle {
+  font-family: "Futura PT Bold";
+  font-size: 18px;
+  padding: 0 15px 16px 15px;
+}
+.footer li {
+  padding: 0 15px 20px 15px;
+}
+.footer ul {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.footer .footer-text:hover {
+  border-bottom: 1px solid white;
+}
+.social-link {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.social-link .fa-brands {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+.footer-copyright {
+  color: #484848;
+  text-align: center;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 23px;
+}
+/*------Адаптив------*/
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+  .other-news {
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .nav {
+    min-height: 0vh;
+  }
+  .nav-search {
+    width: 300px;
+  }
+  .nav-form {
+    position: relative;
+    z-index: 4;
+    padding-right: 0px;
+  }
+  .nav-body {
+    margin-bottom: 5px;
+  }
+
+  .footer-container {
+    padding: 15px;
+  }
+  .footer-content-wrp {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .footer-subtitle {
+    position: relative;
+    padding-right: 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .footer-subtitle::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: url(../img/footer/sort-down.svg) center/cover no-repeat;
+  }
+
+  .footer-content ul {
+    display: block;
+    overflow: hidden;
+    height: auto;
+    max-height: 0;
+    opacity: 0;
+  }
+  .footer-text-wrp {
+    padding: 0 0;
+    margin-top: 14px;
+  }
+  .social-link {
+    margin-top: 12px;
+    margin-left: 30px;
+  }
+  .news-img {
+    width: 320px;
+  }
+  .news-item {
+    max-width: 357px;
+  }
+  .data-info {
+    text-align: center;
+    display: block;
+    margin-bottom: 28px;
+  }
+  .blog-title {
+    margin-bottom: 20px;
+  }
+  .nav {
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+}
+@media (max-width: 776px) {
+  .container {
+    max-width: none;
+    text-align: center;
+  }
+  .nav-form-wrapper {
+    display: none;
+  }
+  .main-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer li {
+    padding: 0 15px 20px 0;
+  }
+
+  .header-flex-content {
+    justify-content: space-between;
+  }
+  .header-menu-window {
+    padding: 70px 25px 20px 50px;
+  }
+
+  .social-link {
+    margin-top: 12px;
+    margin-left: 0px;
+  }
+  .main-news {
+    flex-direction: column;
+    max-width: 384px;
+  }
+  .news-img {
+    max-width: 384px;
+    width: 100%;
+  }
+  .news-info {
+    padding: 28px 23px 0 28px;
+  }
+
+  .other-news {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .blog-title {
+    font-size: 44px;
+    line-height: 46px;
+  }
+}

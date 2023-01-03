@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STREETSTER</title>
+    <link rel="shortcut icon" href="/Streetster/img/favicon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/c1108b7ccd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="nav">
+        <div class="container">
+          <div class="nav-body">
+            <a
+              href="index.html"
+              class="nav-logo"
+              aria-label="Перейти на главную страницу"
+            >
+              <img
+                src="/Streetster/img/header/logo 1.png"
+                alt="Streetster"
+                aria-label="logo"
+              />
+            </a>
+            <div class="nav-form-wrapper">
+              <form action="/" class="nav-form">
+                <button class="nav-submit">
+                  <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="search" class="nav-search" />
+              </form>
+            </div>
+            <div class="nav-icons">
+              <div class="nav-cart">
+                <button class="nav-cart-btn" aria-label="Открыть корзину">
+                  <a href="wallet.html"
+                    ><img src="/Streetster/img/header/cart.svg" alt="корзина"
+                  /></a>
+                </button>
+              </div>
+              <div class="nav-burger">
+                <a href="#popup" class="header-burger"
+                  ><img src="/Streetster/img/header/menu.svg" alt="меню"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="cart"></div>
+          <div class="header-menu-window" id="popup">
+            <div class="header-flex-content">
+              <span>RU / EN</span>
+              <a href="wallet.html"
+                ><img src="/Streetster/img/product/cart.png" alt="корзина"
+              /></a>
+              <a href="#"
+                ><img src="/Streetster/img/header/menu.png" alt="close"
+              /></a>
+            </div>
+            <div class="header-menu-content">
+              <ul class="header-list-bikes">
+                <a href="category.html"
+                  ><li class="header-menu-bikes" data-click="">
+                    ROAD SERIES
+                  </li></a
+                >
+                <a href="category.html"
+                  ><li class="header-menu-bikes" data-click="">
+                    STREET SERIES
+                  </li></a
+                >
+                <a href="category.html"
+                  ><li class="header-menu-bikes" data-click="">
+                    MOUNTAIN SERIES
+                  </li></a
+                >
+              </ul>
+              <ul class="header-list-navigation">
+                <a href="blog.html"
+                  ><li class="header-menu-navigation" data-click="">
+                    Новости
+                  </li></a
+                >
+                <a href="#about"
+                  ><li class="header-menu-navigation" data-click="">
+                    О нас
+                  </li></a
+                >
+                <a href="#"
+                  ><li class="header-menu-navigation" data-click="">
+                    Контакты
+                  </li></a
+                >
+              </ul>
+              <div class="social-link-header">
+                <a href="" class="inst"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="" class="fb"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="promo">
+          <div class="container promo-container">
+            <h2 class="promo-title main-title">
+              <span class="promo-title-small">STREETSTER NATHAN</span>
+              Удобный и быстрый <br />
+              Твой идеал для покорения города
+            </h2>
+            <a href="product.html" class="promo-btn btn-link-black"
+              >УЗНАТЬ БОЛЬШЕ</a
+            >
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="main-content">
+      <section id="category" class="category">
+        <div class="container">
+          <h2 class="category-title main-title">Категории</h2>
+          <div class="swiper-container">
+            <div class="swiper-slide-prev">
+              <img
+                src="/Streetster/img/category/prev.png"
+                alt="Велосипед"
+                class="category-img-prev"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-main">
+              <a href="category.html"
+                ><img
+                  src="/Streetster/img/category/bike.png"
+                  alt="Велосипед"
+                  class="category-img"
+                />
+                <h3 class="slide-title">ROAD SERIES</h3></a
+              >
+            </div>
+            <div class="swiper-slide-next">
+              <img
+                src="/Streetster/img/category/next.png"
+                alt="Велосипед"
+                class="category-img-next"
+              />
+            </div>
+            <button class="swiper-control next-btn">
+              <img src="/Streetster/img/category/next.svg" alt="next" />
+            </button>
+            <button class="swiper-control prev-btn">
+              <img src="/Streetster/img/category/prev.svg" alt="prev" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="favorite">
+        <div class="container">
+          <h2 class="favorite-title main-title">Избранные товары</h2>
+          <div class="favorite-row">
+            <a href="product.html" class="favorite-main">
+              <img
+                src="/Streetster/img/favorite/bike-item.png"
+                class="favorite-main-img"
+                alt="bike"
+              />
+              <h2 class="favorite-main-title">streetster bakerstreet</h2>
+              <p class="favorite-main-subtitle">
+                скорость соединённая с удобством
+              </p>
+              <span href="product.html" class="favorite-btn">
+                <img
+                  src="/Streetster/img/category/next.svg"
+                  class="favorite-btn"
+                  alt="next"
+                />
+              </span>
+            </a>
+            <div class="favorite-items">
+              <div class="favorite-sub">
+                <a href="product.html" class="favorite-sub-item">
+                  <img
+                    src="/Streetster/img/favorite/item1.png"
+                    alt="Шлем Octane"
+                    class="favorite-sub-item-img"
+                  />
+                  <span>Шлем Octane</span>
+                </a>
+                <a href="product.html" class="favorite-sub-item">
+                  <img
+                    src="/Streetster/img/favorite/item2.png"
+                    alt="Защита Canyon"
+                    class="favorite-sub-item-img"
+                  />
+                  <span>Защита Canyon</span>
+                </a>
+              </div>
+              <div class="favorite-sub">
+                <a href="product.html" class="favorite-sub-item">
+                  <img
+                    src="/Streetster/img/favorite/item2.png"
+                    alt="Защита Canyon"
+                    class="favorite-sub-item-img"
+                  />
+                  <span>Защита Canyon</span>
+                </a>
+                <a href="product.html" class="favorite-sub-item">
+                  <img
+                    src="/Streetster/img/favorite/item1.png"
+                    alt="Шлем Octane"
+                    class="favorite-sub-item-img"
+                  />
+                  <span>Шлем Octane</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="streetster-discrabe">
+        <div class="container">
+          <p class="info-text">
+            <span>STREETSTER</span> – Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <p class="info-text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <h3 class="about-title sub-title">Велосипеды Streetster это...</h3>
+          <div class="about-row">
+            <article class="about-cart about-cart">
+              <div class="about-cart-wrapper">
+                <img
+                  src="/Streetster/img/about/about-icon1.png"
+                  alt="Инструменты"
+                  class="about-cart-image"
+                />
+                <h4 class="about-cart-title">Простота обсуживания</h4>
+                <p class="about-cart-text text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </article>
+            <article class="about-cart about-cart">
+              <div class="about-cart-wrapper">
+                <img
+                  src="/Streetster/img/about/about-icon2.png"
+                  alt="Рама"
+                  class="about-cart-image"
+                />
+                <h4 class="about-cart-title">Надежная конструкция</h4>
+                <p class="about-cart-text text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </article>
+            <article class="about-cart about-cart">
+              <div class="about-cart-wrapper">
+                <img
+                  src="/Streetster/img/about/about-icon3.png"
+                  alt="Цепь"
+                  class="about-cart-image"
+                />
+                <h4 class="about-cart-title">Качественные детали</h4>
+                <p class="about-cart-text text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <h2 class="news-title main-title">Новости</h2>
+          <div class="news-posts-wrp">
+            <div class="news-post first">
+              <img src="/Streetster/img/news/news1.jpg" alt="post" />
+              <p class="news-post-title">
+                Лучшие аксессуары для<br />
+                стрит байков
+              </p>
+              <p class="news-post-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua...
+              </p>
+              <a href="blogpost.html" class="news-btn" data-click="">Читать</a>
+            </div>
+            <div class="news-post">
+              <img src="/Streetster/img/news/news2.jpg" alt="post" />
+              <p class="news-post-title">Куда поехать в Киеве?</p>
+              <p class="news-post-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua...
+              </p>
+              <a href="blogpost.html" class="news-btn" data-click="">Читать</a>
+            </div>
+            <div class="news-post third">
+              <img src="/Streetster/img/news/news3.jpg" alt="post" />
+              <p class="news-post-title">
+                Как обслуживать свой<br />
+                велосипед?
+              </p>
+              <p class="news-post-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua...
+              </p>
+              <a href="blogpost.html" class="news-btn" data-click="">Читать</a>
+            </div>
+            <button class="swiper-control next-btn-news">
+              <img src="/Streetster/img/news/next.svg" alt="next" />
+            </button>
+            <button class="swiper-control prev-btn-news">
+              <img src="/Streetster/img/news/prev.svg" alt="prev" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mail-form">
+        <div class="container mail-form-container">
+          <h3 class="mail-form-title sub-title">
+            Подпишитесь на новостную рассылку
+          </h3>
+          <form action="/" class="mail-form-form">
+            <input
+              type="email"
+              class="mail-form-input input-form"
+              placeholder="Email"
+              required=""
+            />
+            <button class="mail-form-submit btn-link-black">ПОДПИСАТЬСЯ</button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer-content-wrp">
+            <a href="index.html" class="footer-logo"
+              ><img
+                class="footer-logo-img"
+                src="/Streetster/img/footer/logo.png"
+                alt="logo"
+            /></a>
+            <div class="footer-text-wrp">
+              <div class="footer-content">
+                <p class="footer-subtitle">Категории</p>
+                <ul>
+                  <li>
+                    <a class="footer-text" href="category.html"> ROAD SERIES</a>
+                  </li>
+                  <li>
+                    <a class="footer-text" href="category.html"
+                      >STREET SERIES</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-text" href="category.html">
+                      MOUNTAIN SERIES</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-content">
+                <p class="footer-subtitle">Информация</p>
+                <ul>
+                  <li>
+                    <a class="footer-text" href="#about">О нас</a>
+                  </li>
+                  <li>
+                    <a class="footer-text" href="index.html">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-content">
+                <p class="footer-subtitle">Категории</p>
+                <ul>
+                  <li>
+                    <a class="footer-text" href="category.html">ROAD SERIES</a>
+                  </li>
+                  <li>
+                    <a class="footer-text" href="category.html"
+                      >STREET SERIES</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-text" href="category.html"
+                      >MOUNTAIN SERIES</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-content">
+                <p class="footer-subtitle">Информация</p>
+                <ul>
+                  <li>
+                    <a class="footer-text" href="#about">О нас</a>
+                  </li>
+                  <li>
+                    <a class="footer-text" href="index.html">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="social-link">
+              <a href="" class="inst"><i class="fa-brands fa-instagram"></i></a>
+              <a href="" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <p class="footer-copyright">© STREETSTER — Все права защищены</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

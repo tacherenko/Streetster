@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STREETSTER</title>
+    <link rel="shortcut icon" href="/Streetster/img/favicon.png" />
+    <link rel="stylesheet" href="css/wallet.css" />
+    <script
+      src="https://kit.fontawesome.com/c1108b7ccd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="nav">
+        <div class="container">
+          <div class="nav-body">
+            <a
+              href="index.html"
+              class="nav-logo"
+              aria-label="Перейти на главную страницу"
+            >
+              <img
+                src="/Streetster/img/product/logo-black.png"
+                alt="Streetster"
+                aria-label="logo"
+              />
+            </a>
+            <div class="nav-form-wrapper">
+              <form action="/" class="nav-form">
+                <button class="nav-submit">
+                  <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="search" class="nav-search" />
+              </form>
+            </div>
+            <div class="nav-icons">
+              <div class="nav-cart">
+                <button class="nav-cart-btn" aria-label="Открыть корзину">
+                  <a href="wallet.html"
+                    ><img src="/Streetster/img/product/cart.png" alt="корзина"
+                  /></a>
+                </button>
+              </div>
+              <div class="nav-burger">
+                <a href="#popup" class="header-burger"
+                  ><img src="/Streetster/img/product/menu.png" alt="меню"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="cart"></div>
+          <div class="header-menu-window" id="popup">
+            <div class="header-flex-content">
+              <span>RU / EN</span>
+              <a href="wallet.html"
+                ><img src="/Streetster/img/product/cart.png" alt="корзина"
+              /></a>
+              <a href="#"
+                ><img src="/Streetster/img/header/menu.png" alt="close"
+              /></a>
+            </div>
+            <div class="header-menu-content">
+              <ul class="header-list-bikes">
+                <a href="category.html"
+                  ><li class="header-menu-bikes" data-click="">
+                    ROAD SERIES
+                  </li></a
+                >
+                <a href="category.html"
+                  ><li class="header-menu-bikes" data-click="">
+                    STREET SERIES
+                  </li></a
+                >
+                <a href="category.html"
+                  ><li class="header-menu-bikes" data-click="">
+                    MOUNTAIN SERIES
+                  </li></a
+                >
+              </ul>
+              <ul class="header-list-navigation">
+                <a href="blog.html"
+                  ><li class="header-menu-navigation" data-click="">
+                    Новости
+                  </li></a
+                >
+                <a href="index.html#about"
+                  ><li class="header-menu-navigation" data-click="">
+                    О нас
+                  </li></a
+                >
+                <a href="index.html"
+                  ><li class="header-menu-navigation" data-click="">
+                    Контакты
+                  </li></a
+                >
+              </ul>
+              <div class="social-link-header">
+                <a href="" class="inst"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="" class="fb"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="order">
+      <div class="container">
+        <h1 class="title">Оформление заказа</h1>
+        <div class="order-columns">
+          <div class="order-info">
+            <div class="order-info-quantity">В корзине 2 товара</div>
+            <ul class="order-info-list">
+              <li class="order-info-item">
+                <article class="o-item" data-id="2">
+                  <div class="all-left">
+                    <img
+                      src="/Streetster/img/product/bike 2.png"
+                      alt="STREETSTER NATHAN"
+                      class="o-item-image"
+                    />
+                    <div class="o-item-info">
+                      <h4 class="o-item-title">STREETSTER NATHAN</h4>
+                      <p class="o-item-text">Цвет: черный, Рама: 54”</p>
+                    </div>
+                  </div>
+                  <div class="all-right">
+                    <div class="o-item-count">
+                      <button class="o-item-count-control position-l">-</button>
+                      <input
+                        type="text"
+                        class="o-item-count-input"
+                        readonly=""
+                        value="1"
+                      />
+                      <button class="o-item-count-control position-r">+</button>
+                    </div>
+                    <span class="o-item-price">12 000₴</span>
+                  </div>
+                </article>
+              </li>
+
+              <li class="order-info-item">
+                <article class="o-item" data-id="20">
+                  <div class="all-left">
+                    <img
+                      src="/Streetster/img/product/helmet.png"
+                      alt="Шлем Octane"
+                      class="o-item-image"
+                    />
+                    <div class="o-item-info">
+                      <h4 class="o-item-title">Шлем Octane</h4>
+                      <p class="o-item-text">Цвет: черный</p>
+                    </div>
+                  </div>
+                  <div class="all-right">
+                    <div class="o-item-count">
+                      <button class="o-item-count-control position-l">-</button>
+                      <input
+                        type="text"
+                        class="o-item-count-input"
+                        readonly=""
+                        value="1"
+                      />
+                      <button class="o-item-count-control position-r">+</button>
+                    </div>
+                    <span class="o-item-price">6000₴</span>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <div class="order-info-free-delivery">Доставка: бесплатно</div>
+            <div class="order-info-sum">
+              Итого:
+              <span class="order-info-summ">12 000 ₴</span>
+            </div>
+            <div class="order-info-btns">
+              <a
+                href="index.html"
+                class="order-info-btn-order btn-link-transparent"
+                >ПРОДОЛЖИТЬ ПОКУПКИ</a
+              >
+              <button
+                class="order-info-btn-order btn-link-transparent"
+                form="contact-form"
+                type="submit"
+              >
+                ОФОРМИТЬ ЗАКАЗ
+              </button>
+            </div>
+          </div>
+          <div class="order-contact">
+            <form action="mail.php" id="contact-form" class="order-form">
+              <div class="cf-top">
+                <h2 class="cf-top-title">Контактная информация</h2>
+                <div class="cf-top-wrapper">
+                  <label class="cf-top-label">
+                    <span class="cf-top-subtitle sub-title">Имя</span>
+                    <input
+                      type="text"
+                      class="cf-top-input input"
+                      name="Имя"
+                      required=""
+                    />
+                  </label>
+                  <label class="cf-top-label">
+                    <span class="cf-top-subtitle sub-title">Фамилия</span>
+                    <input
+                      type="text"
+                      class="cf-top-input input"
+                      name="Фамилия"
+                      required=""
+                    />
+                  </label>
+                  <label class="cf-top-label">
+                    <span class="cf-top-subtitle sub-title"
+                      >Номер телефона</span
+                    >
+                    <input
+                      type="tel"
+                      class="cf-top__input cf-top-input-tel input"
+                      name="Номер телефона"
+                      required=""
+                    />
+                  </label>
+                  <label class="cf-top-label">
+                    <span class="cf-top-subtitle sub-title">E-mail</span>
+                    <input
+                      type="email"
+                      class="cf-top-input cf-top-input-mail input"
+                      name="E-mail"
+                      required=""
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="cf-bottom">
+                <h2 class="cf-bottom-title">Оплата и доставка</h2>
+                <div class="cf-bottom-wrapper">
+                  <div class="cf-bottom-item select-wrap">
+                    <label class="label">
+                      Способ оплаты
+                      <select class="select" name="Способ оплаты" id="select">
+                        <option value="Выбор">Выбор</option>
+                        <option value="Расчёт банковской картой">
+                          Расчёт банковской картой
+                        </option>
+                        <option value="Оплата с помощью электронного кошелька">
+                          Оплата с помощью электронного кошелька
+                        </option>
+                        <option value="Расчёт наличными при получении товара">
+                          Расчёт наличными при получении товара
+                        </option>
+                      </select>
+                      <div class="custom-select">
+                        <div class="custom-select-current" type="button"></div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="cf-bottom-item select-wrap">
+                    <label class="label">
+                      Споспоб получения
+                      <select
+                        class="select"
+                        name="Способ получения"
+                        required=""
+                        tabindex="-1"
+                      >
+                        <option value="">Выбор</option>
+                        <option value="Самовызов из магазин 'STREETSTER">
+                          Самовызов из магазин "STREETSTER"
+                        </option>
+                        <option value="ЕвроПочта'">ЕвроПочта</option>
+                        <option value="Доставка">Доставка</option>
+                      </select>
+                      <div class="custom-select">
+                        <div class="custom-select-current" type="button"></div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="cf-bottom-item">
+                    <label class="cf-bottom-label">
+                      <span class="cf-bottom-subtitle sub-title">Город</span>
+                      <input
+                        type="text"
+                        class="cf-bottom-input input"
+                        name="Город"
+                        required=""
+                      />
+                    </label>
+                  </div>
+                  <div class="cf-bottom-item">
+                    <label class="cf-bottom-label">
+                      <span class="cf-bottom-subtitle sub-title"
+                        >Адрес доставки</span
+                      >
+                      <input
+                        type="text"
+                        class="cf-bottom-input input"
+                        name="Адрес доставки"
+                        required=""
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
