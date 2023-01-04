@@ -642,6 +642,6 @@ footer * {
     font-size: 26px;
   }
   .product-item {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
