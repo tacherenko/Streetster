@@ -459,12 +459,19 @@ footer * {
     max-width: none;
     text-align: center;
   }
-  .nav-form-wrapper {
-    display: none;
-  }
 }
 
 @media (max-width: 450px) {
+  .nav-search {
+    display: none;
+  }
+  .nav-submit i {
+    font-size: 18px;
+  }
+  .nav-submit {
+    left: 8px;
+    top: -3px;
+  }
   .footer li {
     padding: 0 15px 20px 0;
   }
