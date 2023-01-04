@@ -304,6 +304,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.product-item:not(:last-child) {
   border-bottom: 1px solid #000;
 }
 .product-info {
